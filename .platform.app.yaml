@@ -7,7 +7,7 @@ runtime:
   extensions:
     - xmlrpc 
 mounts:
-  'uploads': 'shared:files/uploads'
+  'moodledata': 'shared:files/moodledata'
 relationships:
   database: mysqldb:mysql
 web:

@@ -128,7 +128,7 @@ $CFG->wwwroot = 'https://www---master-7rqtwti-6uw5abx3rmete.us.platform.sh';
 
 $CFG->dataroot  = '/home/example/moodledata';
 if ($config->isAvailable()) {
-  $CFG->dataroot  = '/app/uploads';
+  $CFG->dataroot  = '/app/moodledata';
 }
 
 
