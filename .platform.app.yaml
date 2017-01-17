@@ -9,7 +9,7 @@ web:
   locations:
     '/':
       root: ''
-      passthru: index.php
+      passthru: /index.php
       allow: true
     '/uploads':
       root: ''
