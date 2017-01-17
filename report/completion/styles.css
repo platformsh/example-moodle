@@ -1,0 +1,13 @@
+#page-report-completion-index table#completion-progress {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+#page-report-completion-index .export-actions {
+    text-align: center;
+    list-style: none;
+}
+/*rtl:ignore*/
+#page-report-completion-index #completion-progress th svg {
+    direction: ltr;
+}
