@@ -1,4 +1,4 @@
-# Moodle 2.3 on Platform.sh
+# Moodle 3.2 on Platform.sh
 
 This is an example repo to get you started.  The main points of interest are 
 
