@@ -13,13 +13,13 @@ relationships:
 web:
   locations:
     '/':
-      root: ''
+      root: 'public'
       passthru: /index.php
       allow: true
     '/uploads':
-      root: ''
+      root: 'public'
       allow: false
 crons:
   default:
     spec: '* * * * *'
-    cmd: 'php ./admin/cli/cron.php >/dev/null'
+    cmd: 'php ./public/admin/cli/cron.php >/dev/null'
