@@ -110,7 +110,7 @@ if ($config->isAvailable()) {
 // If you need both intranet and Internet access please read
 // http://docs.moodle.org/en/masquerading
 
-$CFG->wwwroot   = 'http://example.com/moodle';
+$CFG->wwwroot = 'https://www---master-7rqtwti-6uw5abx3rmete.us.platform.sh';
 
 
 //=========================================================================

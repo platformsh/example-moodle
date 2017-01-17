@@ -1,6 +1,8 @@
 name: moodle
 type: php:7.0
 disk: 2048
+build:
+  flavor: composer
 mounts:
   'uploads': 'shared:files/uploads'
 relationships:
