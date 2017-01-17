@@ -2,7 +2,7 @@
 
 This is an example repo to get you started.  The main points of interest are 
 
-- The `.platform` directory, and the two files therein.  These files define project wide webserver configuration and your MySQL database, respectively.
+- The `.platform` directory, and the two files therein - `routes.yaml` and `services.yaml`.  These files define project wide webserver configuration and your MySQL database, respectively.
 - The `.platform.app.yaml` file in the root of this project.  This is the application definition file, and sets up all the parameters needed for Moodle to run on Platform.sh
 - The `public/config.php` file, where the Platform.sh [`config-reader`](https://github.com/platformsh/platformsh-config-reader-php) Composer package is autoloaded, and the database connection info is set.
 
