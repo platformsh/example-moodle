@@ -70,8 +70,8 @@ $CFG->dboptions = array(
 );
 
 if ($config->isAvailable()) {
-  $CFG->dbtype    = $config->relationships['database'][0]['scheme'];
-  // $CFG->dblibrary = 'native';  
+  $CFG->dbtype    = 'mysqli';
+  $CFG->dblibrary = 'native';  
   $CFG->dbhost    = $config->relationships['database'][0]['host'];
   $CFG->dbname    = $config->relationships['database'][0]['path'];
   $CFG->dbuser    = $config->relationships['database'][0]['username'];
