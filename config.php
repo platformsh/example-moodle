@@ -70,12 +70,12 @@ $CFG->dboptions = array(
 );
 
 if ($config->isAvailable()) {
-  $CFG->dbtype    = $config->relationships['database']['scheme'];
+  $CFG->dbtype    = $config->relationships['database'][0]['scheme'];
   $CFG->dblibrary = 'native';  
-  $CFG->dbhost    = $config->relationships['database']['host'];
-  $CFG->dbname    = $config->relationships['database']['path'];
-  $CFG->dbuser    = $config->relationships['database']['username'];
-  $CFG->dbpass    = $config->relationships['database']['password'];
+  $CFG->dbhost    = $config->relationships['database'][0]['host'];
+  $CFG->dbname    = $config->relationships['database'][0]['path'];
+  $CFG->dbuser    = $config->relationships['database'][0]['username'];
+  $CFG->dbpass    = $config->relationships['database'][0]['password'];
   $CFG->prefix    = 'mdl_';       // prefix to use for all table names
   $CFG->dboptions = array(
       'dbpersist' => false,       // should persistent database connections be
