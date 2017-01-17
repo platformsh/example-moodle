@@ -3,6 +3,9 @@ type: php:7.0
 disk: 2048
 build:
   flavor: composer
+runtime:
+  extensions:
+    - xmlrpc 
 mounts:
   'uploads': 'shared:files/uploads'
 relationships:
