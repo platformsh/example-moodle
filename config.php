@@ -70,7 +70,7 @@ $CFG->dboptions = array(
 );
 
 if ($config->isAvailable()) {
-  $CFG->dbtype    = 'mysqli';
+  $CFG->dbtype    = 'mariadb';
   $CFG->dblibrary = 'native';  
   $CFG->dbhost    = $config->relationships['database'][0]['host'];
   $CFG->dbname    = $config->relationships['database'][0]['path'];
