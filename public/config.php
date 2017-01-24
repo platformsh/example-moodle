@@ -110,7 +110,17 @@ if ($config->isAvailable()) {
 // If you need both intranet and Internet access please read
 // http://docs.moodle.org/en/masquerading
 
-$CFG->wwwroot = 'https://www---master-7rqtwti-6uw5abx3rmete.us.platform.sh';
+$CFG->wwwroot = 'http://localhost';
+if ($config->isAvailable()) {
+    $routes = $config->routes;
+    foreach ($routes as $url => $route) {
+        $host = parse_url($url, PHP_URL_HOST);
+        if ($host !== FALSE && $route['type'] == 'upstream' && $route['upstream'] == $_ENV['PLATFORM_APPLICATION_NAME']) {
+            $CFG->wwwroot = $host;
+            break;
+        }
+    }
+}
 
 
 //=========================================================================
