@@ -114,8 +114,7 @@ $CFG->wwwroot = 'http://localhost';
 if ($config->isAvailable()) {
     $routes = $config->routes;
     foreach ($routes as $url => $route) {
-        if ($route->type === 'upstream' && strpos($route->original_url, 'default')) {
-            echo $url;
+        if ($route['type'] === 'upstream' && strpos($route['original_url'], 'default')) {
             $CFG->wwwroot = $url;
             break;
         }
