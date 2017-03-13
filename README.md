@@ -11,9 +11,7 @@ This is an example repo to get you started.  The main points of interest are
 - The entire download was placed into the `public` directory, rather than being in the root of the repo.
 - The `composer.json` and `composer.lock` files were moved up a directory into the root of the repo.  This only appears to load behat for dev (by default), but this repo also loads the `config-reader` Composer package referenced above.
 - `public/config.php` was modified in the following places 
-  - https://github.com/JGrubb/platform-sh-moodle-example/blob/master/public/config.php#L3-L4 to autoload platformsh-config-reader package
-  - https://github.com/JGrubb/platform-sh-moodle-example/blob/master/public/config.php#L72-L99 to set DB connection info.  You shouldn't need to touch this to get started.
-  - https://github.com/JGrubb/platform-sh-moodle-example/blob/master/public/config.php#L129-L132 to set the moodledata directory if in a PSH environment.
-  - https://github.com/JGrubb/platform-sh-moodle-example/blob/master/public/config.php#L134 to set the default homepage.  This cured a bizarre redirect loop that nothing else would, short of putting on the deep diving gear.  See https://moodle.org/mod/forum/discuss.php?d=227536 for more.
-  
-**You'll want to set `$CFG->wwwroot` to something applicable to your project.**
+  - [Lines 3-4](public/config.php#L3-L4) to autoload platformsh-config-reader package
+  - [Lines 72-99](public/config.php#L72-L99) to set DB connection info.  You shouldn't need to touch this to get started.
+  - [Lines 129-132](public/config.php#L129-L132) to set the moodledata directory if in a PSH environment.
+  - [Line 134](public/config.php#L134) to set the default homepage.  This cured a bizarre redirect loop that nothing else would, short of putting on the deep diving gear.  See https://moodle.org/mod/forum/discuss.php?d=227536 for more.
