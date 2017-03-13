@@ -1,2 +1,5 @@
+# Exclude the cache and content directories.
+public/cache
+
 vendor
 .DS_Store
