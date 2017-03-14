@@ -45,7 +45,6 @@ disk: 2048
 # 'shared:files/NAME', where NAME is just a unique name for the mount.
 mounts:
   'moodledata': 'shared:files/moodledata'
-  'public/cache': 'shared:files/cache'
 
 
 # The configuration of scheduled task execution.
